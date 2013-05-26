@@ -1,0 +1,56 @@
+meta-robot-opencv-demo
+======================
+
+A metadata layer for the Yocto Project (http://yoctoproject.org).
+
+This layer provides an image recipe and necessary dependencies to run
+the "MinnowBoard Fish Picker-Upper" demo. This demo makes use of a
+modfified robotic arm (the OWI Robot Arm and its USB control module)
+combined with a USB webcam. It makes use of the OpenCV computer vision
+library to autonomously identify an object and pick it up. 
+
+For a short overview of the demo setup and how it operates, check out
+this video:
+
+https://www.youtube.com/watch?v=idSvJ-RXhq0
+
+This has been used as a demo for the MinnowBoard (http://minnowboard.org).
+
+This layer and the demo itself are works in progress. If you're trying to
+make use of this layer and have questions, please don't hesitate to email
+the maintainer (listed below) for further info. Further documentation
+will be written ASAP.
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+  revision: HEAD
+
+  URI: git://git.openembedded.org/openembedded-core
+  branch: danny
+  revision: HEAD
+
+Or you can combine the above by using:
+
+  URI: git://git.yoctoproject.org/poky
+  branch: danny
+  revision: HEAD
+
+Maintenance
+===========
+
+Layer maintainer: Scott Garman <scott.a.garman@intel.com>
+
+License
+=======
+
+This layer is available under the MIT license. Most of the
+additional recipes you'll find in the layer were taken from the
+meta-openembedded repository. Special thanks to Kevin Strasser (an
+intern with the Yocto Project at Intel's Open Source Technology
+Center) for creating the wxwidgets and python-wxpython recipes,
+which were non-trivial. 
